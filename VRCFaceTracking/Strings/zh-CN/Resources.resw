@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppDisplayName" xml:space="preserve">
-    <value>VRCFaceTracking</value>
+    <value>SomniumSpaceFaceTracking</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>VRCFaceTracking</value>
+    <value>SomniumSpaceFaceTracking</value>
   </data>
   <data name="Shell_Main.Content" xml:space="preserve">
     <value>主页</value>
@@ -148,16 +148,16 @@
     <value>跟随系统</value>
   </data>
   <data name="Settings_About.Text" xml:space="preserve">
-    <value>允许 AV3 头像通过 VRChat OSC 应用程序与眼睛和嘴唇追踪运行时进行交互。</value>
+    <value>允许 头像通过 OSC 应用程序与眼睛和嘴唇追踪运行时进行交互。</value>
   </data>
   <data name="Settings_AboutDescription.Text" xml:space="preserve">
-    <value>允许 AV3 头像通过 VRChat OSC 应用程序与眼睛和嘴唇追踪运行时进行交互。</value>
+    <value>允许 头像通过 OSC 应用程序与眼睛和嘴唇追踪运行时进行交互。</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.Content" xml:space="preserve">
     <value>个性化隐私声明</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.NavigateUri" xml:space="preserve">
-    <value>https://github.com/benaclejames/VRCFaceTracking</value>
+    <value>https://github.com/EtDuxDeus/SomniumSpaceFaceTracking</value>
   </data>
   <data name="AppNotificationSamplePayload" xml:space="preserve">
     <value>&lt;toast launch="action=ToastClick"&gt;
@@ -197,8 +197,8 @@
   <data name="AvatarStatus.Text" xml:space="preserve">
     <value>模型状态</value>
   </data>
-  <data name="copyright.Description" xml:space="preserve">
-    <value>© 2023 VRCFaceTracking。版权所有。</value>
+  <data name="Copyright.Description" xml:space="preserve">
+    <value>© 2025 SomniumSpaceFT。版权所有。</value>
   </data>
   <data name="Dependencies.Header" xml:space="preserve">
     <value>依赖 &amp; 参考</value>
@@ -207,7 +207,7 @@
     <value>描述</value>
   </data>
   <data name="Disclaimer.Header" xml:space="preserve">
-    <value>本代码和信息按“原样”提供，不提供任何明示或暗示的保证，包括但不限于对适销性和/或特定用途适用性的暗示保证。</value>
+    <value>THIS SOFTWARE IS PROVIDED AS-IS WITHOUT WARRANTY OF ANY KIND. BY USING THIS SOFTWARE YOU AGREE WE MAY NOT BE HELD LIABLE FOR ANY DAMAGE THAT MAY RESULT FROM ITS USE.</value>
   </data>
   <data name="Downloads.Text" xml:space="preserve">
     <value>下载量</value>
@@ -245,9 +245,6 @@
   <data name="msOutgoing.Text" xml:space="preserve">
     <value>m/s 传出</value>
   </data>
-  <data name="NoModulesInstalled.Text" xml:space="preserve">
-    <value>没有安装模块</value>
-  </data>
   <data name="OSCStatus.Text" xml:space="preserve">
     <value>OSC状态</value>
   </data>
@@ -277,6 +274,9 @@
   </data>
   <data name="OscSettings.Description" xml:space="preserve">
     <value>OSC 数据应该发送到哪里？</value>
+  </data>
+  <data name="NoModulesInstalled.Text" xml:space="preserve">
+    <value>没有安装模块</value>
   </data>
   <data name="You_appear_to_have_no_modules_installed.Text" xml:space="preserve">
     <value>您似乎没有安装任何模块。</value>

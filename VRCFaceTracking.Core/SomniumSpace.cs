@@ -4,85 +4,15 @@ using Microsoft.Win32;
 
 namespace VRCFaceTracking.Core;
 
-public static class VRChat
+public static class SomniumSpace
 {
     public static void EnsureVRCOSCDirectory()
     {
         if (OperatingSystem.IsWindows())
         {
             VRCOSCDirectory = Path.Combine(
-                $"{Environment.GetEnvironmentVariable("localappdata")}Low", "VRChat", "VRChat", "OSC"
+                $"{Environment.GetEnvironmentVariable("localappdata")}Low", "Somnium Space Ltd", "Somnium Space VR", "OSC"
             );
-        }
-        else
-        {
-            /* On macOS/Linux, things are a little different. The above points to a non-existent folder
-             * Thankfully, we can make some assumptions based on the fact VRChat on Linux runs through Proton
-             * For reference, here is what a target path looks like:
-             * /home/USER_NAME/.steam/steam/steamapps/compatdata/438100/pfx/drive_c/users/steamuser/AppData/LocalLow/VRChat/VRChat/OSC/
-             * Where 438100 is VRChat's Steam GameID, and the path after "steam" is pretty much fixed */
-
-            // 1) First, get the user profile folder
-            // (/home/USER_NAME/)
-            var home = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-
-            // 2) Then, search for common Steam install paths
-            // (/home/USER_NAME/.steam/steam/)
-            string[] possiblePaths =
-            {
-                Path.Combine(home, ".steam", "steam"),
-                Path.Combine(home, ".local", "share", "Steam"),
-                Path.Combine(home, ".var", "app", "com.valvesoftware.Steam", ".local", "share", "Steam")
-            };
-            var steamPath = Array.Find(possiblePaths, Directory.Exists);
-
-            if (string.IsNullOrEmpty(steamPath))
-            {
-                throw new InvalidProgramException("Steam was not detected!");
-            }
-
-            // 3) Inside the steam install directory, find the file steamPath/steamapps/libraryfolders.vdf
-            // This is a special file that tells us where on a users computer their steam libraries are
-            var steamLibrariesPath = Path.Combine(steamPath!, "steamapps", "libraryfolders.vdf");
-
-            // Parse the VDF file without using Gameloop.Vdf
-            var libraryFolders = ParseVdfFile(File.ReadAllText(steamLibrariesPath));
-
-            // From libraryFolders, find the one containing VRChat
-            var vrchatPath = string.Empty;
-
-            // libraryFolders should have a root "libraryfolders" dictionary
-            if (libraryFolders.TryGetValue("libraryfolders", out var libraryFoldersDict) &&
-                libraryFoldersDict is Dictionary<string, object> libraries)
-            {
-                // Each library is indexed by a number (0, 1, 2, etc.)
-                foreach (var library in libraries)
-                {
-                    if (library.Value is Dictionary<string, object> libraryData &&
-                        libraryData.TryGetValue("path", out var pathObj) &&
-                        libraryData.TryGetValue("apps", out var appsObj))
-                    {
-                        string libraryPath = pathObj.ToString();
-
-                        // Check if VRChat is in the apps dictionary
-                        if (appsObj is Dictionary<string, object> apps && apps.ContainsKey("438100"))
-                        {
-                            vrchatPath = libraryPath;
-                            break;
-                        }
-                    }
-                }
-            }
-
-            if (string.IsNullOrEmpty(vrchatPath))
-            {
-                throw new InvalidProgramException(
-                    "Steam was detected, but VRChat was not detected on this system! Is it installed?");
-            }
-
-            // 4) Finally, construct the path to the user's VRChat install
-            VRCOSCDirectory = Path.Combine(vrchatPath, "steamapps", "compatdata", "438100", "pfx", "drive_c",
-                "users", "steamuser", "AppData", "LocalLow", "VRChat", "VRChat", "OSC");
         }
     }
 
@@ -248,5 +178,5 @@ public static class VRChat
         return wasOscForced;
     }
 
-    public static bool IsVrChatRunning() => Process.GetProcesses().Any(x => x.ProcessName == "VRChat");
+    public static bool IsSomniumSpaceRunning() => Process.GetProcesses().Any(x => x.ProcessName == "Somnium Space VR");
 }

@@ -99,7 +99,7 @@ public class ActivationService : IActivationService
     {
         await _themeSelectorService.SetRequestedThemeAsync();
         
-        _logger.LogInformation("VRCFT Version {version} initializing...", Assembly.GetExecutingAssembly().GetName().Version);
+        _logger.LogInformation("SomniumSpaceFT Version {version} initializing...", Assembly.GetExecutingAssembly().GetName().Version);
         
         _logger.LogInformation("Initializing OSC...");
         await _parameterOutputService.InitializeAsync().ConfigureAwait(false);

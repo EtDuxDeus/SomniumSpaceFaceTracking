@@ -10,7 +10,7 @@ public class GithubService
     public async Task<List<GithubContributor>> GetContributors(string repo)
     {
         var client = HappyEyeballsHttp.CreateHttpClient();
-        client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("VRCFaceTracking", "1.0"));
+        client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("SomniumSpaceFaceTracking", "1.0"));
         var response = await client.GetAsync($"https://api.github.com/repos/{repo}/contributors");
         if (!response.IsSuccessStatusCode)
         {

@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppDisplayName" xml:space="preserve">
-    <value>VRCFaceTracking</value>
+    <value>SomniumSpaceFaceTracking</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>VRCFaceTracking</value>
+    <value>SomniumSpaceFaceTracking</value>
   </data>
   <data name="Shell_Main.Content" xml:space="preserve">
     <value>ホーム</value>
@@ -148,16 +148,16 @@
     <value>規定の設定</value>
   </data>
   <data name="Settings_About.Text" xml:space="preserve">
-    <value>AV3 アバターが目と唇の追跡ランタイムと対話できるようにする VRChat OSC アプリ</value>
+    <value>アバターが目と唇の追跡ランタイムと対話できるようにする OSC アプリ</value>
   </data>
   <data name="Settings_AboutDescription.Text" xml:space="preserve">
-    <value>AV3 アバターが目と唇の追跡ランタイムと対話できるようにする VRChat OSC アプリ</value>
+    <value>アバターが目と唇の追跡ランタイムと対話できるようにする OSC アプリ</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.Content" xml:space="preserve">
     <value>プライバシーに関する声明</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.NavigateUri" xml:space="preserve">
-    <value>https://github.com/benaclejames/VRCFaceTracking</value>
+    <value>https://github.com/EtDuxDeus/SomniumSpaceFaceTracking</value>
   </data>
   <data name="AppNotificationSamplePayload" xml:space="preserve">
     <value>&lt;toast launch="action=ToastClick"&gt;
@@ -204,7 +204,7 @@
     <value>Local Test Avatars are not supported and will cause issues</value>
   </data>
   <data name="Copyright.Description" xml:space="preserve">
-    <value>© 2023 VRCFaceTracking. All rights reserved.</value>
+    <value>© 2025 SomniumSpaceFT. All rights reserved.</value>
   </data>
   <data name="Credits.Description" xml:space="preserve">
     <value>ソフトウエアに貢献してくれた方々</value>
@@ -216,7 +216,7 @@
     <value>概要</value>
   </data>
   <data name="Disclaimer.Header" xml:space="preserve">
-    <value>THIS CODE AND INFORMATION IS PROVIDED ‘AS IS’ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.</value>
+    <value>THIS SOFTWARE IS PROVIDED AS-IS WITHOUT WARRANTY OF ANY KIND. BY USING THIS SOFTWARE YOU AGREE WE MAY NOT BE HELD LIABLE FOR ANY DAMAGE THAT MAY RESULT FROM ITS USE.</value>
   </data>
   <data name="Downloads.Text" xml:space="preserve">
     <value>ダウンロード数</value>
@@ -264,7 +264,7 @@
     <value>OSC設定が変更されました</value>
   </data>
   <data name="osc_was_disabled_warning.Description" xml:space="preserve">
-    <value>VRChat で OSC がオフになっていることがわかりました。先ほど有効にしました。これが発生したときにゲームが開いていた場合は、Raidal メニューから手動で有効にする必要がある場合があります。そうでない場合は、大丈夫です。</value>
+    <value>SomniumSpace で OSC がオフになっていることがわかりました。先ほど有効にしました。これが発生したときにゲームが開いていた場合は、Raidal メニューから手動で有効にする必要がある場合があります。そうでない場合は、大丈夫です。</value>
   </data>
   <data name="OSCStatus.Text" xml:space="preserve">
     <value>OSC ステータス</value>

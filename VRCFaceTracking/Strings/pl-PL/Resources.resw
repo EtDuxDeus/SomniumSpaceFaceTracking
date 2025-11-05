@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppDisplayName" xml:space="preserve">
-    <value>VRCFaceTracking</value>
+    <value>SomniumSpaceFaceTracking</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>VRCFaceTracking</value>
+    <value>SomniumSpaceFaceTracking</value>
   </data>
   <data name="Shell_Main.Content" xml:space="preserve">
     <value>Start</value>
@@ -151,13 +151,13 @@
     <value>Aplikacja do OSC VRChatu pozwalająca na interakcję z modułami śledzenia oczu i ust</value>
   </data>
   <data name="Settings_AboutDescription.Text" xml:space="preserve">
-    <value>Aplikacja do OSC VRChatu pozwalająca na interakcję z modułami śledzenia oczu i ust</value>
+    <value>Aplikacja do OSC pozwalająca na interakcję z modułami śledzenia oczu i ust</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.Content" xml:space="preserve">
     <value>Polityka prywatności</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.NavigateUri" xml:space="preserve">
-    <value>https://github.com/benaclejames/VRCFaceTracking</value>
+    <value>https://github.com/EtDuxDeus/SomniumSpaceFaceTracking</value>
   </data>
   <data name="AppNotificationSamplePayload" xml:space="preserve">
     <value>&lt;toast launch="action=ToastClick"&gt;
@@ -204,7 +204,7 @@
     <value>Lokalne awatary testowe nie są wspierane i będą powodować problemy</value>
   </data>
   <data name="Copyright.Description" xml:space="preserve">
-    <value>© 2023 VRCFaceTracking. Wszelkie prawa zastrzeżone.</value>
+    <value>© 2025 SomniumSpaceFT. Wszelkie prawa zastrzeżone.</value>
   </data>
   <data name="Credits.Description" xml:space="preserve">
     <value>Nerdy, dzięki którym powstaje ta apka &lt;3</value>
@@ -216,7 +216,7 @@
     <value>Opis</value>
   </data>
   <data name="Disclaimer.Header" xml:space="preserve">
-    <value>NINEJSZY KOD I INFORMACJE SĄ DOSTARCZANE W STANIE, "W JAKIM SĄ", BEZ JAKICHKOLWIEK GWARANCJI, WYRAŹNYCH LUB DOROZUMIANYCH, W TYM MIĘDZY INNYMI GWARANCJI PRZYDATNOŚCI HANDLOWEJ I/LUB PRZYDATNOŚCI DO OKREŚLONEGO CELU.</value>
+    <value>THIS SOFTWARE IS PROVIDED AS-IS WITHOUT WARRANTY OF ANY KIND. BY USING THIS SOFTWARE YOU AGREE WE MAY NOT BE HELD LIABLE FOR ANY DAMAGE THAT MAY RESULT FROM ITS USE.</value>
   </data>
   <data name="Downloads.Text" xml:space="preserve">
     <value>Pobrań</value>
@@ -291,7 +291,6 @@
     <value>Klonowanie repozytorium</value>
   </data>
   <data name="OpenLocalStorageCard.Header" xml:space="preserve">
-    <value>Open Local Storage</value>
     <value>Otwórz lokalną pamięć</value>
   </data>
   <data name="UsageInstructions.Text" xml:space="preserve">
@@ -355,7 +354,7 @@
     <value>Kalibruj</value>
   </data>
   <data name="ForceReInitButton.Description" xml:space="preserve">
-    <value>Wymuś na VRCFT reset wszystkich modułów</value>
+    <value>Wymuś na SomniumSpaceFT reset wszystkich modułów</value>
   </data>
   <data name="ForceReInitButton.Header" xml:space="preserve">
     <value>Wymuś reinicjalizację</value>
@@ -370,10 +369,10 @@
     <value>Reinicjalizuj</value>
   </data>
   <data name="ResetAvatarConfButton.Description" xml:space="preserve">
-    <value>Zresetuj wszystkie pliki konfiguracyjne OSC VRChatu (zostaną zregenerowane po ponownym załadowaniu awatara)</value>
+    <value>Zresetuj wszystkie pliki konfiguracyjne OSC (zostaną zregenerowane po ponownym załadowaniu awatara)</value>
   </data>
   <data name="ResetAvatarConfButton.Header" xml:space="preserve">
-    <value>Resetuj pliki konfiguracyjne VRChat</value>
+    <value>Resetuj pliki konfiguracyjne awatara</value>
   </data>
   <data name="ResetButton.Content" xml:space="preserve">
     <value>Resetuj</value>
@@ -382,7 +381,7 @@
     <value>Zresetuj wszystkie dane przechowywane przez VRCFT w folderze AppData</value>
   </data>
   <data name="ResetVRCFTButton.Header" xml:space="preserve">
-    <value>Resetuj VRCFT</value>
+    <value>Resetuj SomniumSpaceFT</value>
   </data>
   <data name="HardwareDebug.Header" xml:space="preserve">
     <value>Debug sprzętu</value>

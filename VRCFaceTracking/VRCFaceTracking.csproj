@@ -18,7 +18,7 @@
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     <CreatePackageMakeAppxParameters>/pb "BundleArtifacts/artifact.cat"</CreatePackageMakeAppxParameters>
     <CreateResourcePackageMakeAppxParameters>/pb "BundleArtifacts/artifact.cat"</CreateResourcePackageMakeAppxParameters>
-    <PackageCertificateThumbprint>7EDB400AE163AD281DF9747BAFEAA097579AA178</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>C6E7F9C679466C956FC3DB4DD3FDA779C2196B8B</PackageCertificateThumbprint>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
     <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
     <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
@@ -105,8 +105,6 @@
   </Target>
     
     <Target Name="CopyToMainProject" AfterTargets="Build">
-        <Copy SourceFiles="$(OutputPath)VRCFaceTracking.ModuleProcess.exe"
-              DestinationFolder="..\VRCFaceTracking\bin\$(Platform)\$(Configuration)\$(TargetFramework)\win10-$(Platform)\"
-              SkipUnchangedFiles="true" />
+        <Copy SourceFiles="$(OutputPath)VRCFaceTracking.ModuleProcess.exe" DestinationFolder="..\VRCFaceTracking\bin\$(Platform)\$(Configuration)\$(TargetFramework)\win10-$(Platform)\" SkipUnchangedFiles="true" />
     </Target>
 </Project>

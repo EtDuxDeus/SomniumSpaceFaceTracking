@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppDisplayName" xml:space="preserve">
-    <value>VRCFaceTracking</value>
+    <value>SomniumSpaceFaceTracking</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>VRCFaceTracking</value>
+    <value>SomniumSpaceFaceTracking</value>
   </data>
   <data name="Shell_Main.Content" xml:space="preserve">
     <value>Inicio</value>
@@ -148,16 +148,16 @@
     <value>Por defecto</value>
   </data>
   <data name="Settings_About.Text" xml:space="preserve">
-    <value>Aplicacción VRChat OSC para permitir Avatares AV3 interactuar con las runtimes de seguimiento ocular y labial</value>
+    <value>Aplicacción OSC para permitir Avatares interactuar con las runtimes de seguimiento ocular y labial</value>
   </data>
   <data name="Settings_AboutDescription.Text" xml:space="preserve">
-    <value>Aplicacción VRChat OSC para permitir Avatares AV3 interactuar con las runtimes de seguimiento ocular y labial</value>
+    <value>Aplicacción OSC para permitir Avatares interactuar con las runtimes de seguimiento ocular y labial</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.Content" xml:space="preserve">
     <value>Declaración de privacidad</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.NavigateUri" xml:space="preserve">
-    <value>https://github.com/benaclejames/VRCFaceTracking</value>
+    <value>https://github.com/EtDuxDeus/SomniumSpaceFaceTracking</value>
   </data>
   <data name="AppNotificationSamplePayload" xml:space="preserve">
     <value>&lt;toast launch="action=ToastClick"&gt;
@@ -197,8 +197,8 @@
   <data name="AvatarStatus.Text" xml:space="preserve">
     <value>Estado del avatar</value>
   </data>
-  <data name="copyright.Description" xml:space="preserve">
-    <value>© 2023 VRCFaceTracking. Todos los derechos reservados.</value>
+  <data name="Copyright.Description" xml:space="preserve">
+    <value>© 2025 SomniumSpaceFT. Todos los derechos reservados.</value>
   </data>
   <data name="Dependencies.Header" xml:space="preserve">
     <value>Dependencias y referencias</value>
@@ -207,7 +207,7 @@
     <value>Descripción</value>
   </data>
   <data name="Disclaimer.Header" xml:space="preserve">
-    <value>ESTE CÓDIGO E INFORMACIÓN SE PROPORCIONAN "TAL CUAL" SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD Y/O IDONEIDAD PARA UN PROPÓSITO PARTICULAR.</value>
+    <value>THIS SOFTWARE IS PROVIDED AS-IS WITHOUT WARRANTY OF ANY KIND. BY USING THIS SOFTWARE YOU AGREE WE MAY NOT BE HELD LIABLE FOR ANY DAMAGE THAT MAY RESULT FROM ITS USE.</value>
   </data>
   <data name="Downloads.Text" xml:space="preserve">
     <value>Descargas</value>
@@ -245,9 +245,6 @@
   <data name="msOutgoing.Text" xml:space="preserve">
     <value>m/s Saliente</value>
   </data>
-  <data name="NoModulesInstalled.Text" xml:space="preserve">
-    <value>No hay módulos instalados</value>
-  </data>
   <data name="OSCStatus.Text" xml:space="preserve">
     <value>Estado de OSC</value>
   </data>
@@ -278,10 +275,13 @@
   <data name="OscSettings.Description" xml:space="preserve">
     <value>¿Dónde se deben enviar los datos OSC?</value>
   </data>
-  <data name="You_appear_to_have_no_modules_installed.Text" xml:space="preserve">
-    <value>Parece que no tienes ningún módulo instalado.</value>
-  </data>
   <data name="Shell_TrackingSettings.Content" xml:space="preserve">
     <value>Configuración de Seguimiento</value>
+  </data>
+  <data name="NoModulesInstalled.Text" xml:space="preserve">
+    <value>No hay módulos instalados</value>
+  </data>
+  <data name="You_appear_to_have_no_modules_installed.Text" xml:space="preserve">
+    <value>Parece que no tienes ningún módulo instalado.</value>
   </data>
 </root>

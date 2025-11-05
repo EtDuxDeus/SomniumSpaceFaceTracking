@@ -41,7 +41,7 @@ public class AvatarConfigParser
         }*/
             
         AvatarConfigFile avatarConfig = null;
-        foreach (var userFolder in Directory.GetDirectories(VRChat.VRCOSCDirectory)
+        foreach (var userFolder in Directory.GetDirectories(SomniumSpace.VRCOSCDirectory)
                      .Where(folder => Directory.Exists(Path.Combine(folder, "Avatars"))))
         {
             foreach (var avatarFile in Directory.GetFiles(Path.Combine(userFolder, "Avatars")))
