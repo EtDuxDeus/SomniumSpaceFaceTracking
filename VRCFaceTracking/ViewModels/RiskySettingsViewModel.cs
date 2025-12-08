@@ -26,7 +26,7 @@ public partial class RiskySettingsViewModel(
     /// </summary>
     public void ForceReInit()
     {
-        logger.LogInformation("Reinitializing VRCFT...");
+        logger.LogInformation("Reinitializing SomniumSpaceFaceTracking...");
         
         mainService.Teardown();
         
@@ -38,7 +38,7 @@ public partial class RiskySettingsViewModel(
     /// </summary>
     public void ResetVRCFT()
     {
-        logger.LogInformation("Resetting VRCFT...");
+        logger.LogInformation("Resetting SomniumSpaceFaceTracking...");
         
         // Create a file in the VRCFT folder called "reset"
         // This will cause the app to reset on the next launch
@@ -51,10 +51,10 @@ public partial class RiskySettingsViewModel(
     /// </summary>
     public void ResetAvatarOscManifests()
     {
-        logger.LogInformation("Resetting VRChat avatar configuration...");
+        logger.LogInformation("Resetting avatar configuration...");
         try
         {
-            foreach (var userFolder in Directory.GetDirectories(SomniumSpace.VRCOSCDirectory))
+            foreach (var userFolder in Directory.GetDirectories(SomniumSpace.SomniumSpaceOSCDirectory))
             {
                 if (Directory.Exists(userFolder + "\\Avatars"))
                 {
@@ -64,7 +64,7 @@ public partial class RiskySettingsViewModel(
         }
         catch (Exception e)
         {
-            logger.LogError(e, "Failed to reset VRChat avatar configuration! {Message}", e.Message);
+            logger.LogError(e, "Failed to reset avatar configuration! {Message}", e.Message);
         }
     }
 }

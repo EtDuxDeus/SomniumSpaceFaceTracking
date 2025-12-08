@@ -51,7 +51,7 @@ public class MainStandalone : IMainService
 
     public Task InitializeAsync()
     {
-        SomniumSpace.EnsureVRCOSCDirectory();
+        SomniumSpace.EnsureSomniumSpaceOSCDirectory();
 
         // Ensure OSC is enabled
         var isWindows = OperatingSystem.IsWindows();

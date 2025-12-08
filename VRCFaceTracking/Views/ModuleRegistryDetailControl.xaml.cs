@@ -53,7 +53,7 @@ public sealed partial class ModuleRegistryDetailControl
                 control.InstallButton.Content = "Update";
                 break;
             case InstallState.AwaitingRestart:
-                control.InstallButton.Content = "Please Restart VRCFT";
+                control.InstallButton.Content = "Please Restart SomniumSpaceFaceTracking";
                 control.InstallButton.IsEnabled = false;
                 break;
             default:
@@ -102,7 +102,7 @@ public sealed partial class ModuleRegistryDetailControl
             }
             case InstallState.Installed:
             {
-                InstallButton.Content = "Please Restart VRCFT";
+                InstallButton.Content = "Please Restart SomniumSpaceFaceTracking";
                 InstallButton.IsEnabled = false;
                 _libManager.TeardownAllAndResetAsync();
                 _moduleInstaller.MarkModuleForDeletion(ListDetailsMenuItem!);

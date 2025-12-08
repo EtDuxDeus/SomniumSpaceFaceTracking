@@ -138,13 +138,13 @@
 
                 <!--  About  -->
                 <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" x:Uid="About" />
-                
-                <labs:SettingsExpander x:Uid="Copyright" Header="VRCFaceTracking">
+
+                <labs:SettingsExpander x:Uid="Copyright" Header="SomniumSpaceFaceTracking">
                     <TextBlock
                             Margin="0,-2,0,0"
                             Foreground="{ThemeResource TextFillColorSecondaryBrush}"
                             IsTextSelectionEnabled="True"
-                            Text="{x:Bind Version}" />
+                            Text="1.0.0.1" />
                     <labs:SettingsExpander.Items>
                         <labs:SettingsCard
                             x:Uid="PrivacyPolicyCard"
@@ -158,7 +158,7 @@
                             <TextBlock
                                     Foreground="{ThemeResource TextFillColorSecondaryBrush}"
                                     IsTextSelectionEnabled="True"
-                                    Text="git clone https://github.com/benaclejames/VRCFaceTracking" />
+                                    Text="git clone https://github.com/EtDuxDeus/SomniumSpaceFaceTracking" />
                         </labs:SettingsCard>
                         <labs:SettingsCard
                                 x:Uid="BugRequestCard"

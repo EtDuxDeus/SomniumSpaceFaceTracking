@@ -47,7 +47,7 @@ public partial class SettingsViewModel : ObservableRecipient
 
     private async void LoadContributors()
     {
-        Contributors = await GithubService.GetContributors("benaclejames/VRCFaceTracking");
+        Contributors = await GithubService.GetContributors("EtDuxDeus/SomniumSpaceFaceTracking");
     }
 
     public SettingsViewModel(IThemeSelectorService themeSelectorService, GithubService githubService, OpenVRService openVRService)

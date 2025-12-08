@@ -200,6 +200,9 @@
   <data name="Copyright.Description" xml:space="preserve">
     <value>© 2025 SomniumSpaceFT. Todos los derechos reservados.</value>
   </data>
+  <data name="Credits.Description" xml:space="preserve">
+    <value>Everyone who made this possible</value>
+  </data>
   <data name="Dependencies.Header" xml:space="preserve">
     <value>Dependencias y referencias</value>
   </data>

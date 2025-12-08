@@ -59,7 +59,7 @@ public partial class OscQueryService(
 
         httpHandler.OnHostInfoQueried += HandleNewAvatarWrapper;
 
-        var recvEndpoint = recvService.UpdateTarget(new IPEndPoint(IPAddress.Parse(oscTarget.DestinationAddress), 0));
+        var recvEndpoint = recvService.UpdateTarget(new IPEndPoint(IPAddress.Parse(oscTarget.DestinationAddress), oscTarget.InPort));
         if (recvEndpoint == null)
         {
             logger.LogError("Very strange. We were unable to bind to a random port.");
@@ -68,12 +68,12 @@ public partial class OscQueryService(
 
         var randomServiceSuffix = Utils.GetRandomChars(6);
         var httpPort = Utils.GetRandomFreePort();
-        httpHandler.SetAppName("VRCFT-" + randomServiceSuffix);
+        httpHandler.SetAppName("SomniumFT-" + randomServiceSuffix);
         httpHandler.BindTo($"http://127.0.0.1:{httpPort}/", recvEndpoint.Port);
 
         // Advertise our OSC JSON and OSC endpoints (OSC JSON to display the silly lil popup in-game)
-        multicastDnsService.Advertise("_oscjson._tcp", new AdvertisedService("VRCFT-"+randomServiceSuffix, httpPort, IPAddress.Loopback));
-        multicastDnsService.Advertise("_osc._udp", new AdvertisedService("VRCFT-"+randomServiceSuffix, recvEndpoint.Port, IPAddress.Loopback));
+        multicastDnsService.Advertise("_oscjson._tcp", new AdvertisedService("SomniumFT-" + randomServiceSuffix, httpPort, IPAddress.Loopback));
+        multicastDnsService.Advertise("_osc._udp", new AdvertisedService("SomniumFT-" + randomServiceSuffix, recvEndpoint.Port, IPAddress.Loopback));
 
         HandleNewAvatar();
     }

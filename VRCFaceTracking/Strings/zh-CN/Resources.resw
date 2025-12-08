@@ -200,6 +200,9 @@
   <data name="Copyright.Description" xml:space="preserve">
     <value>© 2025 SomniumSpaceFT。版权所有。</value>
   </data>
+  <data name="Credits.Description" xml:space="preserve">
+    <value>Everyone who made this possible</value>
+  </data>
   <data name="Dependencies.Header" xml:space="preserve">
     <value>依赖 &amp; 参考</value>
   </data>

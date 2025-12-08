@@ -207,7 +207,7 @@
     <value>© 2025 SomniumSpaceFT. All rights reserved.</value>
   </data>
   <data name="Credits.Description" xml:space="preserve">
-    <value>The nerds who made this all possible &lt;3</value>
+    <value>Everyone who made this possible</value>
   </data>
   <data name="Dependencies.Header" xml:space="preserve">
     <value>Dependencies &amp; references</value>
@@ -321,7 +321,7 @@
     <value>Risky Settings</value>
   </data>
   <data name="RiskySettings.Description" xml:space="preserve">
-    <value>Danger, danger. High voltage..</value>
+    <value>Use at your own risk</value>
   </data>
   <data name="AutoStartSettings.Header" xml:space="preserve">
     <value>Auto Start</value>
@@ -375,7 +375,7 @@
     <value>Reset all OSC config data (will be regenerated when avatar is reloaded)</value>
   </data>
   <data name="ResetAvatarConfButton.Header" xml:space="preserve">
-    <value>Reset VRChat Configs</value>
+    <value>Reset Configs</value>
   </data>
   <data name="ResetButton.Content" xml:space="preserve">
     <value>Reset</value>

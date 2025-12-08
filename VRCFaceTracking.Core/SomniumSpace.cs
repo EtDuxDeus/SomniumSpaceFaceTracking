@@ -6,17 +6,17 @@ namespace VRCFaceTracking.Core;
 
 public static class SomniumSpace
 {
-    public static void EnsureVRCOSCDirectory()
+    public static void EnsureSomniumSpaceOSCDirectory()
     {
         if (OperatingSystem.IsWindows())
         {
-            VRCOSCDirectory = Path.Combine(
+            SomniumSpaceOSCDirectory = Path.Combine(
                 $"{Environment.GetEnvironmentVariable("localappdata")}Low", "Somnium Space Ltd", "Somnium Space VR", "OSC"
             );
         }
     }
 
-    public static string VRCOSCDirectory { get; private set; }
+    public static string SomniumSpaceOSCDirectory { get; private set; }
 
     /// <summary>
     /// Parse a VDF file into a dictionary structure

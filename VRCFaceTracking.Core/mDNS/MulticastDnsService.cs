@@ -193,7 +193,7 @@ public partial class MulticastDnsService : ObservableObject
         }
 
         var ptrRecord = packet.answers[0].Data as PTRRecord;
-        if (ptrRecord.DomainLabels.Count != 4 || !ptrRecord.DomainLabels[0].StartsWith("VRChat-Client"))
+        if (ptrRecord.DomainLabels.Count != 4 || !ptrRecord.DomainLabels[0].StartsWith("SomniumSpace-Client"))
         {
             return;
         }
