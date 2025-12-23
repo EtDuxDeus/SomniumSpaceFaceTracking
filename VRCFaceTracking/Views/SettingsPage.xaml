@@ -144,7 +144,7 @@
                             Margin="0,-2,0,0"
                             Foreground="{ThemeResource TextFillColorSecondaryBrush}"
                             IsTextSelectionEnabled="True"
-                            Text="1.0.0.1" />
+                            Text="0.0.1" />
                     <labs:SettingsExpander.Items>
                         <labs:SettingsCard
                             x:Uid="PrivacyPolicyCard"
@@ -173,6 +173,7 @@
                                 ContentAlignment="Vertical"
                                 x:Uid="Dependencies">
                             <StackPanel Margin="-12,0,0,0" Orientation="Vertical">
+                                <HyperlinkButton Content="VRCFaceTracking" NavigateUri="https://github.com/benaclejames/VRCFaceTracking" />
                                 <HyperlinkButton Content="SimpleRustOSC" NavigateUri="https://github.com/benaclejames/SimpleRustOSC" />
                             </StackPanel>
                         </labs:SettingsCard>
