@@ -1,13 +1,9 @@
 # 👀 VRCFaceTracking
 
-Provides eye tracking and lip tracking in VRChat by providing a bridge between your tracking hardware and VRChat's OSC server.
+Provides eye tracking and lip tracking in SomniumSpace by providing a bridge between your tracking hardware and SomniumSpace OSC server.
 ## [Get started here!](https://docs.vrcft.io/docs/intro/getting-started)
 
 [![Discord](https://discord.com/api/guilds/849300336128032789/widget.png)](https://discord.com/invite/vrcft)
-
-## 🎥 Demo
-
-[![](https://i.imgur.com/iQkw12C.jpg)](https://youtu.be/ZTVnh8aaf9U)
 
 ## 🛠 Avatar Setup
 
