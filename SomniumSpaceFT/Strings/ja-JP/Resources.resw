@@ -124,37 +124,37 @@
     <value>SomniumSpaceFaceTracking</value>
   </data>
   <data name="Shell_Main.Content" xml:space="preserve">
-    <value>Home</value>
+    <value>ホーム</value>
   </data>
   <data name="ListDetails_NoSelection.Text" xml:space="preserve">
-    <value>Select an item from the list.</value>
+    <value>リストから項目を選択</value>
   </data>
   <data name="Shell_ListDetails.Content" xml:space="preserve">
-    <value>ListDetails</value>
+    <value>リスト詳細</value>
   </data>
   <data name="Settings_Personalization.Text" xml:space="preserve">
-    <value>Personalization</value>
+    <value>個人用設定</value>
   </data>
   <data name="Settings_Theme.Text" xml:space="preserve">
-    <value>Theme</value>
+    <value>テーマ</value>
   </data>
   <data name="Settings_Theme_Light.Content" xml:space="preserve">
-    <value>Light</value>
+    <value>ライト</value>
   </data>
   <data name="Settings_Theme_Dark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>ダーク</value>
   </data>
   <data name="Settings_Theme_Default.Content" xml:space="preserve">
-    <value>Default</value>
+    <value>規定の設定</value>
   </data>
   <data name="Settings_About.Text" xml:space="preserve">
-    <value>OSC App to allow Avatars to interact with eye and lip tracking runtimes</value>
+    <value>アバターが目と唇の追跡ランタイムと対話できるようにする OSC アプリ</value>
   </data>
   <data name="Settings_AboutDescription.Text" xml:space="preserve">
-    <value>OSC App to allow Avatars to interact with eye and lip tracking runtimes</value>
+    <value>アバターが目と唇の追跡ランタイムと対話できるようにする OSC アプリ</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.Content" xml:space="preserve">
-    <value>Privacy Statement</value>
+    <value>プライバシーに関する声明</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.NavigateUri" xml:space="preserve">
     <value>https://github.com/EtDuxDeus/SomniumSpaceFaceTracking</value>
@@ -174,28 +174,28 @@
 &lt;/toast&gt;</value>
   </data>
   <data name="Shell_Output.Content" xml:space="preserve">
-    <value>Output</value>
+    <value>デバッグログ</value>
   </data>
   <data name="Shell_Parameters.Content" xml:space="preserve">
-    <value>Parameters</value>
+    <value>パラメーター</value>
   </data>
   <data name="ModuleRegistry_NoSelection.Text" xml:space="preserve">
-    <value>Select an item from the list.</value>
+    <value>リストから項目を選択</value>
   </data>
   <data name="Shell_ModuleRegistry.Content" xml:space="preserve">
-    <value>Module Registry</value>
+    <value>モジュール管理</value>
   </data>
   <data name="About.Text" xml:space="preserve">
     <value>About</value>
   </data>
   <data name="Appearance.Text" xml:space="preserve">
-    <value>Appearance</value>
+    <value>アプリケーションライセンス</value>
   </data>
   <data name="Author.Text" xml:space="preserve">
-    <value>Author</value>
+    <value>制作者</value>
   </data>
   <data name="AvatarStatus.Text" xml:space="preserve">
-    <value>Avatar Status</value>
+    <value>アバターステータス</value>
   </data>
   <data name="LocalTestAvatar.Text" xml:space="preserve">
     <value>Local Test Avatar Detected</value>
@@ -204,28 +204,28 @@
     <value>Local Test Avatars are not supported and will cause issues</value>
   </data>
   <data name="Copyright.Description" xml:space="preserve">
-    <value>2025 SomniumSpaceFT.</value>
+    <value>© 2023 VRCFaceTracking. All rights reserved.</value>
   </data>
   <data name="Credits.Description" xml:space="preserve">
     <value>Everyone who made this possible</value>
   </data>
   <data name="Dependencies.Header" xml:space="preserve">
-    <value>Dependencies &amp; references</value>
+    <value>依存関係と参照</value>
   </data>
   <data name="Description.Text" xml:space="preserve">
-    <value>Description</value>
+    <value>概要</value>
   </data>
   <data name="Disclaimer.Header" xml:space="preserve">
     <value>THIS SOFTWARE IS PROVIDED AS-IS WITHOUT WARRANTY OF ANY KIND. BY USING THIS SOFTWARE YOU AGREE WE MAY NOT BE HELD LIABLE FOR ANY DAMAGE THAT MAY RESULT FROM ITS USE.</value>
   </data>
   <data name="Downloads.Text" xml:space="preserve">
-    <value>Downloads</value>
+    <value>ダウンロード数</value>
   </data>
   <data name="EyeTrackingActive.Text" xml:space="preserve">
-    <value>Eye Tracking Active</value>
+    <value>アイトラッキング アクティブ</value>
   </data>
   <data name="FaceTrackingActive.Text" xml:space="preserve">
-    <value>Face Tracking Active</value>
+    <value>フェイストラッキング　アクティブ</value>
   </data>
   <data name="EyeTrackingInactive.Text" xml:space="preserve">
     <value>Eye Tracking Inactive</value>
@@ -234,165 +234,96 @@
     <value>Face Tracking Inactive</value>
   </data>
   <data name="BugRequestCard.Header" xml:space="preserve">
-    <value>File a bug report</value>
-  </data>
-  <data name="PrivacyPolicyCard.Header" xml:space="preserve">
-    <value>Privacy Policy</value>
+    <value>バグレポートを提出する</value>
   </data>
   <data name="LastUpdated.Text" xml:space="preserve">
-    <value>Last Updated</value>
+    <value>最終更新</value>
   </data>
   <data name="LegacyParameters.Text" xml:space="preserve">
     <value>Legacy Parameters</value>
   </data>
   <data name="Listening_on_Port.Text" xml:space="preserve">
-    <value>Listening on Port:</value>
+    <value>受信ポート:</value>
   </data>
   <data name="ModulePage.Text" xml:space="preserve">
-    <value>Module Page</value>
+    <value>モジュールリポジトリ</value>
   </data>
   <data name="msIncoming.Text" xml:space="preserve">
-    <value>msgs/sec Incoming</value>
+    <value>m/s 受信</value>
   </data>
   <data name="msOutgoing.Text" xml:space="preserve">
-    <value>msgs/sec Outgoing</value>
+    <value>m/s 送信</value>
   </data>
   <data name="no_modules_installed_warning.Title" xml:space="preserve">
-    <value>No Modules Installed</value>
+    <value>モジュールがインストールされていません</value>
   </data>
   <data name="no_modules_installed_warning.ButtonText" xml:space="preserve">
-    <value>Install some from here!</value>
+    <value>ここからいくつかインストールしてください！</value>
   </data>
   <data name="osc_was_disabled_warning.Title" xml:space="preserve">
-    <value>OSC Settings Modified</value>
+    <value>OSC設定が変更されました</value>
   </data>
   <data name="osc_was_disabled_warning.Description" xml:space="preserve">
-    <value>We noticed your OSC was turned off in SomniumSpace, we've just enabled it for you. If the game was open when this happened, you may need to manually enable it from your raidal menu. If not, you should be good to go!</value>
+    <value>SomniumSpace で OSC がオフになっていることがわかりました。先ほど有効にしました。これが発生したときにゲームが開いていた場合は、Raidal メニューから手動で有効にする必要がある場合があります。そうでない場合は、大丈夫です。</value>
   </data>
   <data name="OSCStatus.Text" xml:space="preserve">
-    <value>OSC Status</value>
+    <value>OSC ステータス</value>
   </data>
   <data name="Parameters.Text" xml:space="preserve">
-    <value>Parameters</value>
+    <value>パラメーター</value>
   </data>
   <data name="Rating.Text" xml:space="preserve">
-    <value>Rating</value>
+    <value>評価</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App theme</value>
+    <value>テーマ</value>
   </data>
   <data name="ThemeSettings.Description" xml:space="preserve">
-    <value>Select which app theme to display</value>
+    <value>表示するアプリのテーマを選択します</value>
   </data>
   <data name="Sending_on_Port.Text" xml:space="preserve">
-    <value>Sending on Port:</value>
+    <value>送信ポート:</value>
   </data>
   <data name="ToggleTracking.Content" xml:space="preserve">
-    <value>Toggle Tracking</value>
+    <value>トラッキング</value>
   </data>
   <data name="CloneRepoCard.Header" xml:space="preserve">
-    <value>To clone this repository</value>
+    <value>このリポジトリのクローンを作成するには</value>
   </data>
   <data name="OpenLocalStorageCard.Header" xml:space="preserve">
-    <value>Open Local Storage</value>
+    <value>ローカルストレージを開く</value>
   </data>
   <data name="UsageInstructions.Text" xml:space="preserve">
-    <value>Usage Instructions</value>
+    <value>使用上の注意</value>
   </data>
   <data name="Version.Text" xml:space="preserve">
-    <value>Version</value>
+    <value>バージョン</value>
   </data>
   <data name="OscSettings.Header" xml:space="preserve">
-    <value>OSC Address</value>
+    <value>OSC アドレス</value>
   </data>
   <data name="OscSettings.Description" xml:space="preserve">
-    <value>Where should OSC Data be sent?</value>
+    <value>OSC アドレス設定</value>
   </data>
   <data name="no_modules_installed_warning.Description" xml:space="preserve">
-    <value>You appear to have no modules installed.</value>
+    <value>モジュールがインストールされていません</value>
   </data>
   <data name="CalibrationSettings.Header" xml:space="preserve">
-    <value>Calibration Settings</value>
+    <value>キャリブレーション設定</value>
   </data>
   <data name="CalibrationSettings.Description" xml:space="preserve">
-    <value>Tweak tracking data to your heart's content</value>
+    <value>トラッキングにズレがある場合ここで調節することができます</value>
   </data>
   <data name="RiskySettings.Header" xml:space="preserve">
-    <value>Risky Settings</value>
+    <value>開発者向け設定</value>
   </data>
   <data name="RiskySettings.Description" xml:space="preserve">
-    <value>Use at your own risk</value>
+    <value>正常な動作に支障をきたす場合があるため通常は使わないでください</value>
   </data>
   <data name="AutoStartSettings.Header" xml:space="preserve">
-    <value>Auto Start</value>
+    <value>自動起動</value>
   </data>
   <data name="AutoStartSettings.Description" xml:space="preserve">
-    <value>Auto Start when SteamVR is launched</value>
-  </data>
-  <data name="CalibrationEnabledToggle.Header" xml:space="preserve">
-    <value>Calibration Enabled</value>
-  </data>
-  <data name="CalibrationEnabledToggle.Description" xml:space="preserve">
-    <value>Toggles whether or not calibration is enabled</value>
-  </data>
-  <data name="ContCalibrationToggle.Header" xml:space="preserve">
-    <value>Continuous Calibration</value>
-  </data>
-  <data name="ContCalibrationToggle.Description" xml:space="preserve">
-    <value>Slowly calibrates to your facial expressions over time</value>
-  </data>
-  <data name="TrackingCalibrateButton.Header" xml:space="preserve">
-    <value>Calibrate</value>
-  </data>
-  <data name="TrackingCalibrateButton.Description" xml:space="preserve">
-    <value>Heighten the influence your expressions make on calibration temporarily</value>
-  </data>
-  <data name="CalibrationInfluenceSlider.Header" xml:space="preserve">
-    <value>Calibration Influence</value>
-  </data>
-  <data name="CalibrationInfluenceSlider.Description" xml:space="preserve">
-    <value>Controls how much of an influence your facial expressions have on overall calibration over time</value>
-  </data>
-  <data name="CalibrateButton.Content" xml:space="preserve">
-    <value>Calibrate</value>
-  </data>
-  <data name="ForceReInitButton.Description" xml:space="preserve">
-    <value>Force SomniumSpaceFT to unload and reinitialize all modules</value>
-  </data>
-  <data name="ForceReInitButton.Header" xml:space="preserve">
-    <value>Force Re-Initialize</value>
-  </data>
-  <data name="ForceRelevancyToggle.Description" xml:space="preserve">
-    <value>Forces sending of all parameters every frame by forcing relevancy</value>
-  </data>
-  <data name="ForceRelevancyToggle.Header" xml:space="preserve">
-    <value>Force Relevancy</value>
-  </data>
-  <data name="ReInitButton.Content" xml:space="preserve">
-    <value>Re-Initialize</value>
-  </data>
-  <data name="ResetAvatarConfButton.Description" xml:space="preserve">
-    <value>Reset all OSC config data (will be regenerated when avatar is reloaded)</value>
-  </data>
-  <data name="ResetAvatarConfButton.Header" xml:space="preserve">
-    <value>Reset Configs</value>
-  </data>
-  <data name="ResetButton.Content" xml:space="preserve">
-    <value>Reset</value>
-  </data>
-  <data name="ResetVRCFTButton.Description" xml:space="preserve">
-    <value>Reset all data stored by SomniumSpaceFT in your AppData folder</value>
-  </data>
-  <data name="ResetVRCFTButton.Header" xml:space="preserve">
-    <value>Reset SomniumSpaceFT</value>
-  </data>
-  <data name="HardwareDebug.Header" xml:space="preserve">
-    <value>Hardware Debug</value>
-  </data>
-  <data name="HardwareDebug.Description" xml:space="preserve">
-    <value>Stare at your tongue I guess?</value>
-  </data>
-  <data name="Shell_TrackingSettings.Content" xml:space="preserve">
-    <value>Tracking Settings</value>
+    <value>SteamVRの起動時に自動で起動します</value>
   </data>
 </root>

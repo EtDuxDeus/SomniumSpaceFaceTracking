@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VRCFaceTracking", "VRCFaceTracking\VRCFaceTracking.csproj", "{194D2A6B-90D3-4CD5-A2CF-341E00DB5F75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SomniumSpaceFT", "SomniumSpaceFT\SomniumSpaceFT.csproj", "{194D2A6B-90D3-4CD5-A2CF-341E00DB5F75}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VRCFaceTracking.Core", "VRCFaceTracking.Core\VRCFaceTracking.Core.csproj", "{7E29B109-E682-4F89-A47D-5A3CC5CD5F41}"
 EndProject
