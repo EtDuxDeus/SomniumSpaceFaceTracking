@@ -74,7 +74,7 @@ public class Filter : TrackingMutation
 
     public override string Name => "Data Filter";
 
-    public override string Description => "Default data filtering for VRCFaceTracking expressions.";
+    public override string Description => "Default data filtering for SomniumSpaceFaceTracking expressions.";
 
     public override MutationPriority Step => MutationPriority.Postprocessor;
 

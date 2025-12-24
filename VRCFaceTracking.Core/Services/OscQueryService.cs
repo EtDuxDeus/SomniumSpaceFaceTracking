@@ -43,7 +43,7 @@ public partial class OscQueryService(
             return;  // Return both false as we cant bind to anything without an address
         }
 
-        multicastDnsService.OnVrcClientDiscovered += FirstClientDiscovered;
+        multicastDnsService.OnClientDiscovered += FirstClientDiscovered;
 
         multicastDnsService.SendQuery("_oscjson._tcp.local");
 
@@ -53,9 +53,9 @@ public partial class OscQueryService(
 
     private void FirstClientDiscovered()
     {
-        multicastDnsService.OnVrcClientDiscovered -= FirstClientDiscovered;
+        multicastDnsService.OnClientDiscovered -= FirstClientDiscovered;
 
-        logger.LogInformation($"OSCQuery detected at {multicastDnsService.VrchatClientEndpoint}. Setting port negotiation to autopilot.");
+        logger.LogInformation($"OSCQuery detected at {multicastDnsService.VrClientEndpoint}. Setting port negotiation to autopilot.");
 
         httpHandler.OnHostInfoQueried += HandleNewAvatarWrapper;
 

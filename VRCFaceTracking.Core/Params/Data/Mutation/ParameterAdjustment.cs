@@ -54,7 +54,7 @@ public class ParameterAdjustment : TrackingMutation
 
     public override string Name => "Parameter Adjustment";
 
-    public override string Description => "Adjust VRCFaceTracking Parameters.";
+    public override string Description => "Adjust SomniumSpaceFaceTracking Parameters.";
 
     public override MutationPriority Step => MutationPriority.None;
 

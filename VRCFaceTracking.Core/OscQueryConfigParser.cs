@@ -18,13 +18,13 @@ public class OscQueryConfigParser(
     {
         try
         {
-            if (multicastDnsService.VrchatClientEndpoint == null)
+            if (multicastDnsService.VrClientEndpoint == null)
             {
                 return null;
             }
 
             // Request on the endpoint + /avatar/parameters
-            var httpEndpoint = "http://" + multicastDnsService.VrchatClientEndpoint + "/avatar";
+            var httpEndpoint = "http://" + multicastDnsService.VrClientEndpoint + "/avatar";
 
             // Get the response
             var response = await _httpClient.GetAsync(httpEndpoint);
@@ -64,7 +64,7 @@ public class OscQueryConfigParser(
         catch (Exception e)
         {
             parserLogger.LogError(e.Message);
-            SentrySdk.CaptureException(e, scope => scope.SetExtra("endpoint", multicastDnsService.VrchatClientEndpoint));
+            SentrySdk.CaptureException(e, scope => scope.SetExtra("endpoint", multicastDnsService.VrClientEndpoint));
             return null;
         }
     }

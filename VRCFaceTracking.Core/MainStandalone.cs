@@ -56,16 +56,6 @@ public class MainStandalone : IMainService
         // Ensure OSC is enabled
         var isWindows = OperatingSystem.IsWindows();
 
-        //if (isWindows && SomniumSpace.ForceEnableOsc()) // If osc was previously not enabled
-        //{
-        //    _logger.LogWarning("SomniumSpaceFaceTracking detected OSC was disabled and automatically enabled it.");
-        //    // If we were launched after VRChat
-        //    if (SomniumSpace.IsSomniumSpaceRunning())
-        //        _logger.LogError(
-        //            "However, SomniumSpace was running while this change was made.\n" +
-        //            "If parameters do not update, please restart SomniumSpace or manually enable OSC yourself in your avatar's expressions menu.");
-        //}
-
         _mutator.Load();
 
         // Begin main OSC update loop

@@ -80,7 +80,7 @@ public class UnifiedLibManager : ILibManager
         if (_sandboxServer == null )
         {
             // @TODO: Figure out an elegant way to ask the GUI for the ports the user assigned to the OSCTarget.
-            int[] reservedPorts = new int[2] { 9000, 9001 };
+            int[] reservedPorts = new int[2] { 7320, 7321 };
             _sandboxServer = new VrcftSandboxServer(_loggerFactory, reservedPorts);
             _sandboxServer.OnPacketReceived += (in IpcPacket packet, in int port) =>
             {

@@ -9,7 +9,7 @@ public class HttpHandler(IOscTarget oscTarget, ILogger<HttpHandler> logger) : ID
     private readonly HttpListener _listener = new();
     private IAsyncResult _contextListenerResult;
     private string _appName = "VRCFT";
-    private int _oscPort = 9001;
+    private int _oscPort = 7321;
 
     public Action OnHostInfoQueried = () => { };
 

@@ -12,12 +12,12 @@ public partial class OscTarget : ObservableValidator, IOscTarget
 
     [ObservableProperty]
     [Range(1, 25535)]
-    [property: SavedSetting("OSCInPort", 9001)]
+    [property: SavedSetting("OSCInPort", 7321)]
     private int _inPort;
 
     [ObservableProperty]
     [Range(1, 25535)]
-    [property: SavedSetting("OSCOutPort", 9000)]
+    [property: SavedSetting("OSCOutPort", 7320)]
     private int _outPort;
 
     [ObservableProperty]

@@ -158,7 +158,7 @@
                             <TextBlock
                                     Foreground="{ThemeResource TextFillColorSecondaryBrush}"
                                     IsTextSelectionEnabled="True"
-                                    Text="git clone https://github.com/EtDuxDeus/SomniumSpaceFaceTracking" />
+                                    Text="git clone https://github.com/benaclejames/VRCFaceTracking.git" />
                         </labs:SettingsCard>
                         <labs:SettingsCard
                                 x:Uid="BugRequestCard"
@@ -173,7 +173,7 @@
                                 ContentAlignment="Vertical"
                                 x:Uid="Dependencies">
                             <StackPanel Margin="-12,0,0,0" Orientation="Vertical">
-                                <HyperlinkButton Content="VRCFaceTracking" NavigateUri="https://github.com/benaclejames/VRCFaceTracking" />
+                                <HyperlinkButton Content="VRCFaceTracking" NavigateUri="https://github.com/benaclejames/VRCFaceTracking.git" />
                                 <HyperlinkButton Content="SimpleRustOSC" NavigateUri="https://github.com/benaclejames/SimpleRustOSC" />
                             </StackPanel>
                         </labs:SettingsCard>

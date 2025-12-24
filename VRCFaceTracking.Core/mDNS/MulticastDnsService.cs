@@ -19,9 +19,9 @@ public partial class MulticastDnsService : ObservableObject
     private static readonly Dictionary<UdpClient, CancellationToken> Receivers = new();
     private static readonly Dictionary<string, AdvertisedService> Services = new();
 
-    public Action OnVrcClientDiscovered = () => { };
+    public Action OnClientDiscovered = () => { };
 
-    [ObservableProperty] private IPEndPoint _vrchatClientEndpoint;
+    [ObservableProperty] private IPEndPoint _vrClientEndpoint;
 
     private static List<NetworkInterface> GetIpv4NetInterfaces() => NetworkInterface.GetAllNetworkInterfaces()
         .Where(net =>
@@ -77,9 +77,7 @@ public partial class MulticastDnsService : ObservableObject
 
     private async void ResolveDnsQueries(DnsPacket packet, IPEndPoint remoteEndpoint)
     {
-        // Me when having to wait for vrchat to resolve itself
-        // https://www.youtube.com/watch?v=wLg04uu2j2o
-        if (packet.OPCODE != 0 || VrchatClientEndpoint == null)
+        if (packet.OPCODE != 0 || VrClientEndpoint == null)
         {
             return;
         }
@@ -185,7 +183,7 @@ public partial class MulticastDnsService : ObservableObject
         //await unicastClientIp4.SendAsync(bytes, bytes.Length, remoteEndpoint);
     }
 
-    public void ResolveVrChatClient(DnsPacket packet, IPEndPoint remoteEndpoint)
+    public void ResolveVrClient(DnsPacket packet, IPEndPoint remoteEndpoint)
     {
         if (!packet.QUERYRESPONSE || packet.answers.Length <= 0 || packet.answers[0].Type != 12)
         {
@@ -212,15 +210,15 @@ public partial class MulticastDnsService : ObservableObject
             return;
         }
 
-        var vrChatClientIp = aRecord.Data as ARecord;
-        var vrChatClientPort = srvRecord.Data as SRVRecord;
+        var vrClientIp = aRecord.Data as ARecord;
+        var vrClientPort = srvRecord.Data as SRVRecord;
 
-        if (vrChatClientIp?.Address == null || vrChatClientPort?.Port == null)
+        if (vrClientIp?.Address == null || vrClientPort?.Port == null)
         {
             return;
         }
 
-        var hostAddress = vrChatClientIp.Address;
+        var hostAddress = vrClientIp.Address;
 
         // If the host address is a loopback address (127.0.0.1) but isn't our local machine,
         // manually set the correspondence address to where we heard the mdns response come from
@@ -230,8 +228,8 @@ public partial class MulticastDnsService : ObservableObject
             hostAddress = remoteEndpoint.Address;
         }
 
-        VrchatClientEndpoint = new IPEndPoint(hostAddress, vrChatClientPort.Port);
-        OnVrcClientDiscovered();
+        VrClientEndpoint = new IPEndPoint(hostAddress, vrClientPort.Port);
+        OnClientDiscovered();
     }
 
     private async void Listen(UdpClient client, CancellationToken ct)
@@ -252,8 +250,7 @@ public partial class MulticastDnsService : ObservableObject
                 var reader = new BigReader(result.Buffer);
                 var packet = new DnsPacket(reader);
 
-                // I'm aware this is cringe, but we do this first as it's a lot more likely vrchat beats us to the punch responding to the query
-                ResolveVrChatClient(packet, result.RemoteEndPoint);
+                ResolveVrClient(packet, result.RemoteEndPoint);
                 ResolveDnsQueries(packet, result.RemoteEndPoint);
             }
             catch (Exception e)

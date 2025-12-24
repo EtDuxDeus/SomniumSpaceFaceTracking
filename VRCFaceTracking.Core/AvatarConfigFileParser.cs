@@ -7,9 +7,6 @@ using VRCFaceTracking.Core.Services;
 
 namespace VRCFaceTracking.Core;
 
-/// <summary>
-/// ConfigParser is responsible for parsing the traditional JSON OSC config that VRChat produces
-/// </summary>
 public class AvatarConfigParser
 {
     private readonly ILogger<AvatarConfigParser> _logger;

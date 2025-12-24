@@ -10,7 +10,7 @@
 			"strings": {
 				"en_us": {
 					"name": "SomniumSpaceFaceTracking",
-					"description": "SomniumSpaceFaceTracking provides a bridge between facial tracking hardware and VRChat."
+					"description": "SomniumSpaceFaceTracking provides a bridge between facial tracking hardware and SomniumSpace."
 				}
 			}
 		}
